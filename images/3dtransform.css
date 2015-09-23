@@ -1,0 +1,26 @@
+#container{
+	display: inline-block;
+	position: relative;
+	width: 200px
+	transition: 1s transform ease;
+	transform-style: preserve-3d;
+}
+
+#meta-container{
+	perspective: 800px;
+}
+
+input:checked + div {
+	transform: rotateY(180deg);
+}
+
+img {
+	width: 200px;
+	position:absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+}
+img#front{
+	transform: rotateY(180deg);
+}
